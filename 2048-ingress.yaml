@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "webserver-ingress"
+  name: "2048-ingress"
   namespace: "2048-game"
   annotations:
     kubernetes.io/ingress.class: alb
@@ -9,7 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: service-group
   labels:
-    app: webserver-ingress
+    app: 2048-ingress
 spec:
   rules:
     - host: dev.surajkumar.website
