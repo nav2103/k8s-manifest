@@ -14,7 +14,7 @@ spec:
         app: "frontend"
     spec:
       containers:
-      - image: 767397737394.dkr.ecr.us-east-2.amazonaws.com/navneet-cicd:4
+      - image: 767397737394.dkr.ecr.us-east-2.amazonaws.com/navneet-cicd:5
         imagePullPolicy: Always
         name: "frontend"
         ports:
